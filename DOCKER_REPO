@@ -1,0 +1,2 @@
+# This will be sourced by every ./*/alias.sh
+DOCKER_REPO_PREFIX=edznux

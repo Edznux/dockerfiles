@@ -6,5 +6,5 @@ angr(){
 	docker run --rm -it \
 		-v "$(pwd):/home/angr/workdir" \
 		$DOCKER_REPO_PREFIX/angr \
-		$1
+		$@
 }

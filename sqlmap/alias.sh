@@ -4,6 +4,7 @@
 # We use the workdir subdirectory to avoid dealing with .bash_history and other crap
 sqlmap(){
 	docker run --rm -it \
+		--network="host" \
 		-v "$(pwd):/home/sqlmap/workdir" \
 		$DOCKER_REPO_PREFIX/sqlmap \
 		$@

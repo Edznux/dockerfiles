@@ -4,6 +4,7 @@
 # We use the workdir subdirectory to avoid dealing with .bash_history and other crap
 gobuster(){
 	docker run --rm -it \
+		--network="host" \
 		-v "$(pwd):/home/gobuster/workdir" \
 		$DOCKER_REPO_PREFIX/gobuster \
 		$@
